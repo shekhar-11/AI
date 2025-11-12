@@ -1,0 +1,51 @@
+1> ROADMAP OF NLP------------------------------------------------------------------------
+From down to up its just improvement in techniques 
+
+
+
+
+
+
+
+
+
+
+
+BOTTOM UP FOR NLP
+----------------------BERT-------------------------------
+----------------------TRANSFORMERS------------------------
+Text Processing ----- Word Embeddings 
+-------------------------RNN, Gru RNN, LSTM Rnn  (DEEP LEARNING)-------------------------
+Text Processing 3----- Word2Vec , Average Word2Vec
+Text Processing 2-----  Bag of Words ----   TF-IDF  ----   Unigram, Bigram
+Text Processing 1----   Tokenization  ----   Stemming  ----   Lemmatization
+ -----------------------------------------------------------------------           
+                            PYTHON
+
+
+
+2>  USECASES OF NLP
+1> Autocorrect 
+2> Auto Complete
+3> Automated Reply
+4> Translation
+5> Text To Video
+6> Text To Image
+
+
+
+
+
+
+
+
+3> Tokenization in NLP
+
+Corpus ---- Paragraph
+Documents --- Sentences are also called as Documents
+Vocabulary --  all the UNIQUE words present in the paragraph/Document
+Words ---- all the individual words present in the paragraph/Document
+
+
+
+*A corpus can be tokenized into sentences and sentences can be tokenized into words.
