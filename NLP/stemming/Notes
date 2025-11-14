@@ -1,0 +1,29 @@
+Stemming -----
+It refers to the process of reducing a word to its base or root form.\\
+For example, the words "running," "runner," and "ran" can all be reduced to the root "run."
+
+Disadvantage ------------- The root form may not be a valid word in the language but serves as a common representation for various inflected forms of the word.
+eg -- history, historical, historically -> histori
+
+
+
+
+
+Types of Stemming Algorithms -----
+
+Porter Stemmer:
+#(Definition as stemming) PorterStemmer has the issue that it sometimes produces stems that are not actual words. For example, the stem of "running" is "run", which is a valid word, but the stem of "easily" is "easili", which is not a valid word. This can be problematic in applications where the output needs to be human-readable 
+
+Regex Stemming:
+#This basically takes a singular regular expression and removes any suffix or prefix defined on the expression
+
+
+SnowBall Stemmer
+A bit improvement of porter stemmer (ex in code like for sportingly )
+
+
+
+But on the whole the stemming is not good enough to help with reducing words so as to convert them in vectors for creating chatbots and all
+like goes becomes --- goe 
+so not always the results are good 
+so LEMMATIZATION
