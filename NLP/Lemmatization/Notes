@@ -1,0 +1,24 @@
+The lemmatization refers to reducing the word to its root word . Its similar to stemming, the only difference is that the stemming reduces to root stem , 
+while the lemmatization reduces to root word.
+The output we get is called lemma.
+After this we get the correct word that means the same thing (unlike in stemming where for historical we get histori)
+
+NLTK provides WordNetLemmatizer class
+
+This class uses morphy() function  to the WordNetCorpusReader class to find lemma
+
+
+# lemmatizer.lemmatize(word,pos)
+# #pos ===>
+# Noun- n
+# verb - v
+# adverb = r
+# adjective = a
+
+
+
+NOTE- ---- The wordnet lemmizer compares with the wordnet corpus so it takes time to compare if large number of words are there
+Used in  ------- QnA , Chatbots , Text Summarization
+
+
+#few words like consistently hasn't been defined in it so spaCy is needed (consider word net corpus is limited words dictionary )

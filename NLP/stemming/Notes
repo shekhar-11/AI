@@ -1,5 +1,5 @@
 Stemming -----
-It refers to the process of reducing a word to its base or root form.\\
+It refers to the process of reducing a word to its stem form.\\
 For example, the words "running," "runner," and "ran" can all be reduced to the root "run."
 
 Disadvantage ------------- The root form may not be a valid word in the language but serves as a common representation for various inflected forms of the word.
