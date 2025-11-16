@@ -38,6 +38,8 @@ Text Processing 1----   Tokenization  ----   Stemming  ----   Lemmatization
 
 
 
+########################           TEXT-PROCESSING (DATA CLEANING) -----------> CONVERT TO VECTORS------------> TRAIN THE MODEL(in order to train we need to give in numerical/mathematical values)
+
 
 3> Tokenization in NLP
 

@@ -1,0 +1,5 @@
+Stopwords are used to remove the unnecessary words from the corpus 
+eg -- I, has, could, the, of , ....(sometimes not can be important)
+
+stopwords are for multiple languages like eng, german....
+we can create our own stopwords as well
