@@ -29,12 +29,25 @@ sentences = nt.sent_tokenize(paragraph)
 
 # print(len(sentences))
 
-for i in range(len(sentences)):
-    words = nt.word_tokenize(sentences[i])
-    # print(words)
-    words = [stemPort.stem(word) for word in words if word not in set(stopwords.words('english'))]
+# for i in range(len(sentences)):
+#     words = nt.word_tokenize(sentences[i])
+#     # print(words)
+#     words = [stemPort.stem(word) for word in words if word not in set(stopwords.words('english'))]
 
-    sentences[i] = ' '.join(words) 
+#     sentences[i] = ' '.join(words) 
 
-print(sentences)
+# print(sentences)
+
+#learn the compressed for loop 
+
+words = paragraph.split(' ')
+# print(words)
+finalWords = []
+for i in words:
+    if i not in stopwords.words('english'):
+        finalWords.append(i)
+        # finalWords
+
+finalWords = ' '.join(finalWords)
+print(finalWords)
 
