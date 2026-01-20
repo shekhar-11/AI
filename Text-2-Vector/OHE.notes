@@ -1,0 +1,58 @@
+#what is one hot encoding
+"""
+It refers to the conversion of the words to vectors whose technique is described below
+
+lets say we have sentences as ----
+
+
+D1 -- The food is good
+D2 -- The food is tasty
+D3 -- Battle is on 
+
+so in this ----- 
+            1> first we collect the unique words vocabulary -----
+
+            
+                The food is good tasty battle on --- 7 [0,0,0,0,0,0,0]
+
+                
+                SO lets say I want to write "The" --->  [1,0,0,0,0,0,0]
+                "Food" --->                             [0,1,0,0,0,0,0]
+
+
+So similarly if I want to write D1 -------------->
+        [[1,0,0,0,0,0,0],[0,1,0,0,0,0,0],[0,0,1,0,0,0,0],[0,0,0,1,0,0,0]]
+        ie mapping of each word to respective position
+        Not used much now -- but good to start with so as to understand 
+
+
+"""
+
+# What are the advantages of OHE ----
+#         It is present as a part of sklearn library and also as pandas.get_dummies() --- which helps in generating ohe
+
+
+# Disadvantages----
+#         1>  It creates a large number of sparse matrix ie a lot of 0s and 1s almost all 0 and only 1 as 1 for a particular word so-
+#                 Huge RAM usage & Slow data loading
+#         2>ML Algorithm needs fixed sized data -- here lets say we are trying to train , so the third sentence D3 will generate 3x7 matrix while others are 4x7 matrix
+#         3>No semantic meaning is captured 
+
+#                 example ---
+#                         food burger pizza
+#                         1       0       0
+#                         0       1       0
+#                         0       0       1
+#                         so if we take the cosine distance of them so it will be same , for all as on number line all are at same distance, so its not defining how is one word related to others
+
+#         4>OOV (out of vocabulary)
+#                 lets say we have defined on the basis of D1, D2, D3 and the new sentence comes as Burger is good, 
+#                         so the model is not trained over Burger as it is not present in the vocab , so it will create an issue
+#         5> The model won't have just 5-6 words but very large numbers lets say 50K so again its taking space(consider it as a part of disadv 1)
+
+
+
+
+
+
+###############################  SOME OF THE DISADVANTAGES ARE FIXED BY THE BAG OF WORDS (BOW)#####################################################
