@@ -1,0 +1,34 @@
+#===========================+BAG OF WORDS======================================#
+
+Its better than OHE
+
+example -- 
+S1 - The boy is good
+S2 - The girl is good                   --------->   Stopwords applied--------------> boy girl good
+S3 - Boy and girl are good
+
+
+Frequency
+    good - 3
+    boy -  2
+    girl - 2
+
+
+so in descending order its kept ,there are many words generally so the most frequent ones are chosen as features, the ones appearing only 1 time.. are ignored
+
+
+                good        boy         girl
+S1                1          1             0
+S2                1          0             1
+S3                1          1             1
+
+
+SO basically there are two --- one is binary bow and other is bow
+
+If its binary bow --- then the vectorization is forced to have only {0,1}
+else normal bow can have more increment on the basis of repetition
+eg---
+    S4 ---The boy is good and also the girl is good
+
+    S4 -----      2            1            1
+
