@@ -32,3 +32,24 @@ eg---
 
     S4 -----      2            1            1
 
+
+
+
+Advantages--
+Simple and Intuitive
+It has fixed size input -- so ml algos work here  
+
+Disadvantages --
+sparse matrix/array -- still overfitting
+ordering of the word is getting changed as , the one with the highest freq is getting prioritized , so the sequence of the vector has affected 
+oov (lets say there is a new word in the testing , so it cant give o/p as the training is on the limited words)
+sementic meaning is still not present -- 
+
+
+
+THE food good is not 
+
+eg -- The food is good ---------   [1,1,1,0,1]
+The food is not good ----------   [1,1,1,1,1]
+
+so when these are plotted --- so the cosine angle btwn them is very less -- (so vectors are very close ) --  so it states the sentences are similar -- but they are not 
