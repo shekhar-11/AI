@@ -74,8 +74,10 @@ class sklearn.feature_extraction.text.CountVectorizer(*, input='content', encodi
 from sklearn.feature_extraction.text import CountVectorizer
 
 
-CV = CountVectorizer(max_features=2500,binary=True)         #top 2500 frequent words(as already explained we take top frequent words)
+CV = CountVectorizer(max_features=2500,binary=True,ngram_range=(1,5))         #top 2500 frequent words(as already explained we take top frequent words)
 
+
+# just the difference is ngram_range in parameters  , and the diff can be seen through CV.vocabulary_
 
 
 # *******************************************
