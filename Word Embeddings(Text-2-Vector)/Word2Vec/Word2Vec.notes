@@ -1,0 +1,70 @@
+published in 2013
+uses neural network model to learn word associations from a large corpus of texts
+once trained , such model can detect synonymous words or suggest additional words for a partial sentence
+as the name implies,  Word2Vec represents each distinct word with a particular list of numbers  called a vector 
+
+
+
+SO here is the concept of "FEATURE_EXTRACTION" --- how a particular word are related to features
+
+
+eg --
+
+
+            Girl            Boy             King                Queen               Apple               Mango
+
+Gender       -1             +1               -0.95                  0.942           0.001                   0.002         
+age           0.87          0.77               0.98                 0.95            0.96                    0.92
+royal           0.001       0.003               0.99                0.92            0.73                    0.56
+shape       0.02            0.03                0.01                0.03               0.67                 0.54
+. 
+.
+.
+.
+.
+nth dimension(nth feature)
+
+and google has trained the word2vec on billions of features
+
+
+
+so the vector looks like --  Girl[-1 , 0.87 , 0.001 .......................]
+
+SO these are helpful for the estimation of the particular data and trained over the ANN 
+
+So the famous expression ------             KING - BOY + QUEEN = GIRL   
+
+So these features help in understanding the relation of the words
+
+
+
+And these relations can be found through --- COSINE SIMILARITY
+
+
+
+                    y
+                    ↑
+                    |
+                    |        B
+                    |       *        *A
+                    |      /       /
+                    |     /      /
+                    |    /     /
+                    |   /    /
+                    |  / θ /
+                    | /  /
+                    |/ /
+ -------------------+----------------→ x
+
+
+So θ = angle between them called as the cosine similarity 
+and the distance is calculated by ====>
+                Distance  = 1 - cosine similarity
+
+
+                so lets say the angle btwn A and B is 45*
+                so distance  = 1- cos45 = 1-(1/root(2)) = 1 - 0.71 = 0.29
+
+                lets say if one is on y axis and other on x axis  then d = 1
+                if both on same axis   ==  d = 1 - 1 = 0 
+                so closer to 0 means more related to each other and this is based on feature 
