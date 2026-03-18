@@ -1,0 +1,39 @@
+According to wikipedia --
+
+IN NLP , the word embeddings is a term used for the representation of words  for the text analysis, typically 
+in the form of  real-valued vector that encodes the meaning of the word such that the words that are  closer in the vector  space are expected
+to be similar in the meaning
+
+
+
+
+
+
+
+
+                                                             
+                 |
+                 |        Excited 
+                 |          ●
+                 |
+                 |      ● Happy 
+-----------------+---------------------->
+                 |
+                 |
+                 |
+         Angry ● |
+                 |
+           
+
+
+
+                        WORD embeddings
+                            |||
+                            |||
+             ------------------------------------
+             |||                            |||
+             Count of frequency             Deep learning model (fixes all disadv of count of frequency)
+
+             1> OHE                         1>Word2Vec --------------CBOW (continuous Bag Of WOrds)           
+             2> BOW                         2> Skipgram
+             3> TF-IDF 
