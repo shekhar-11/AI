@@ -1,0 +1,24 @@
+MSE -- mean squarred error -- squares the error before averaging them 
+        penalizes the larger errors more than smaller ones (how )---->
+        smooth gradients for optmimization
+
+        MSE = (1/N) * sum of ((yi - y^)^2)   for i=1 to N
+
+        so if actual value is 20 and predicted value (by model ) = 10 , yi = 20,30 y^ = 10,15
+        then mse = (1/N) *   (100 + 225)
+
+        answer to how == if the diff is far away , it is shown as amplified == 30-15 square = 225 , while 20-10 square = 100 , so more diff--> more mse
+
+
+MAE 
+        takes absolute diff between yi and y^ , 
+        why abs  ==> lets say yi = 20 and y^ = 25 --> -5
+        yi =20 and y^    = +5 
+        then we get diff as 0 on summation
+
+        so abs 
+
+        MAE = (1/N) * sum of (|yi-y^|)   for i = 1 to N
+
+        treats all errors equally
+        less sensitive to outliers as compared to MSE

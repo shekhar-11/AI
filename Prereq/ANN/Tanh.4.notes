@@ -1,0 +1,13 @@
+x = e^z y = e^(-z)
+
+
+f(z) = tanz(z) = (x-y)/(x+y)
+
+f'(z) = 1- (f(z))^2
+
+0 centered unlike sigmoid -- 0.5 centered
+
+so happy == near to +1
+sad == near to -1
+
+disadv -- vanishing gradient but less than sigmoid

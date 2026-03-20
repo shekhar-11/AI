@@ -1,0 +1,37 @@
+Rectified Linear Unit (father of all, most used)
+
+output = [0,infinity)
+
+
+f(z) = max(0,z) = z if(z>=0)
+                  0 is(z<0)
+
+
+f'(z) = 0 if(z<=0)
+        1 , (z>0)
+
+
+adv - it does not suffer gradient vanishing problem for +ve inputs
+
+disadv - neuron inactive if -ve values (as values goes 0 , so backpropagation gets affected for -ve values)
+
+
+
+
+this disadv is fixed by LEAKY ReLU
+
+just for -ve z values multiply alpha ( a very small value )
+
+
+so now == 
+f(z) = z   if(z>=0)
+        alpha  * z , for(z<0)      alpha eg -- 0.01 ......
+
+similarly = 
+
+f'(z) = alpha * z, if(z<0)
+        1 , if(z>0)
+
+
+
+output : (-infinity , infinity)

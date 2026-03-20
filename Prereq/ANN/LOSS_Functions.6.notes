@@ -1,0 +1,23 @@
+Errors/Loss -- difference between expected vs actual output
+
+how far the predicted value from the actual value
+
+Loss function helps in tuning the weights , through backpropagation and gradient descent
+
+
+so basically at first we have some weights , so on the basis of these loss functions we tune our weights repeatedly
+
+
+
+2 types of loss functions--
+
+
+regression Loss function ( for continuous outputs):
+
+    1> Mean squarred  Error (mse)
+    2> Mean absolute error (MAE)
+    3> Huber Loss (robust to outliers)
+
+classification loss functions (for discrete outputs)
+    1>Cross entropy loss (log loss)   (can be for both continuous as well as discrete ) (but mostly for binary classification)
+    2> hinge loss(for SVMs)

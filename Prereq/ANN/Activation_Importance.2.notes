@@ -1,0 +1,23 @@
+Need of Activation --
+this function introduces non-linearity into the model 
+
+non-linearity means considering various factors
+
+without activation function -- the neural network will work like a basic regression model -- fixed output no improvement
+
+
+lets say 2 inputs x1,x2 has w11,w12 for intermediate layer h1 
+and w21, w22 for layer h2 
+
+from h1 and h2 -- w3 , w4 to z (final)
+
+
+so h1 = x1w11 + x2w12 + b1
+h2  = x1w21 + x2w22 +b2
+
+then again for z = h1*w3 + h2+w4 + b3 
+
+so this is just linear functions no complex just simple arithmetic calculations
+so for better non-linearity and reduce the high outputs (for higher values) to some lower range -- [0,1] , [-1,1] we need activation function 
+
+ReLu , sigmoid, tanh, softmax

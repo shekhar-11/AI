@@ -1,0 +1,39 @@
+ANN as prereq for understanding the Word2Vec 
+
+ANN -- copy of human brain
+
+
+Components -
+1>Nodes/Neurons --- kind of ds where some values are stored (in numerical forms)
+
+2> Layers -- different layers of processing ---- 
+
+            input layer ----- hidden layers(calculations) --- o/p layer
+
+
+3> Connections -- how strongly a value is connected to other value based on bias, weight
+
+4> Activation function --- ouput we get sometimes as non-linear like 10,20,1000 , but it should be coming under [0,1] , so we apply this
+                        basically breaking bigger Components to smaller Components
+
+
+
+works the same -- huge i/p for training 
+
+
+Its not just about generating o/p but generating the more optimal o/p , so this can be done thorugh huge data , then auto-learn
+
+there are functions for activation like -- Relu, sigmoid ...............
+
+
+   --x1---(X1)
+              |
+              |(w1)
+              |------ (Y) -- y 
+              |(w2)
+  ---x2---(X2)-
+
+  so some input x1 , x2 we get some value of Y then activation -- y
+  and backpropagation on the different inputs so that the proper understanding of how the inputs are fluctuating
+
+  y  = x1w1 + x2w2 + b (some biased)
