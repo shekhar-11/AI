@@ -1,0 +1,20 @@
+used for training the SVM (support vector machines) in classificaition problems. It is a convex loss function that encourages the model to correctly classify the data points while maximizing the margin between the classes. The hinge loss is defined as:
+
+L(y,y^) =(1/N) (sigma(i=1 to N)) max(0, 1 - y*y^)
+
+where y is the true label (+1 or -1) and y^ is the predicted score. unlike regression where range is from 0 to 1
+
+
+
+Email                actual value         predicted value
+
+A(spam)                 -1                      -2
+B(not spam)             +1                     +0.6 
+C(spam)                -1                      +0.3   
+
+
+so y^ = predicted value 
+y = actual value
+
+
+so for A , L = max(0, 1 - (-1)*(-2)) = max(0, 1 - 2) = max(0, -1) = 0

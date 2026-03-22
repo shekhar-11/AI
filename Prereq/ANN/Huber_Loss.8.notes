@@ -1,0 +1,11 @@
+HL -- Huber Loss  -- best of MSE & MAE
+
+adv of both = HL
+for small errors, it works like MSE (smooth and differentiable)
+for large errors, it works as MAE (robust to outliers)
+
+L(y,y^) = 1/2(y-y^)^2 if |y-y^| <= delta
+L(y,y^) = delta * (|y-y^| - 1/2*delta) if |y-y^| > delta
+
+
+delta(threshold) is a hyperparameter that determines the threshold between small and large errors
