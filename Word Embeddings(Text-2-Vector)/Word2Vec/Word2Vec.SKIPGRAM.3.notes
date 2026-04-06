@@ -1,0 +1,23 @@
+It is the same as the CBOW model, except that the input and output are reversed. The input is a single word,
+and the output is a context of words. The model learns to predict the context given the input word.
+
+Skip-gram is also a fully connected neural network, where the input layer is the target word, 
+and the output layer is the context words. The hidden layer is used to learn the word embeddings. The weights of the hidden layer are the word embeddings.
+
+
+
+As per research , 
+CBOW -- when the training data is small, and the model is less complex, CBOW performs better than Skip-gram.
+Skip-gram -- when the training data is large, and the model is more complex, Skip-gram performs better than CBOW.
+Skip-gram is also better at capturing the semantic relationships between words.
+
+
+How to improve skipgram/CBOW---
+
+1> Increase the training data -- more data will help the model to learn better word embeddings.
+2> Increase the window size -- a larger window size will help the model to capture more context,
+ which will help in learning better word embeddings.
+
+
+ window size -- the number of words to be considered as context on either side of the target word. (increase in vector dimension)
+ vector dimension -- the number of dimensions , the number of features in the word related to a word

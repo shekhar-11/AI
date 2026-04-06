@@ -1,0 +1,11 @@
+advantages of Word2Vec:
+
+1> it gives dense matrix(unlike other where we got sparse matrix)
+2> Now semantic information is getting captured(ie similar words are getting similar vectors) -- [Honest,good]
+
+3>we don't worry about vector size, as it has fixed set of dimensions, 
+eg in google pretrained model, the vector size is 300, so each word is represented by a vector of 300 dimensions,
+ and we can use this vector for our downstream tasks like text classification, sentiment analysis, etc.\
+ previously , when the vocab size was huge, that size vector we used to get
+
+ 4>OOV is also solved,as words are presented as some form of features

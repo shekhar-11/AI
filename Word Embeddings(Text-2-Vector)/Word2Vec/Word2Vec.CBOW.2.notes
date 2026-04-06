@@ -1,0 +1,49 @@
+two types- CBOW, Skipgram
+
+
+here we have pretrained models, or we can train our own model on our own data.
+
+
+
+CBOW - Continuous Bag of Words -- supervised learning model, where the context is used to predict the target word.
+
+
+window size for creating the ip and op data for the training of the model, and the window size
+ is the number of words to be considered as context on either side of the target word.
+
+
+
+
+
+ [My name is Raj and I am the best]
+
+
+ taking the window size = 2
+
+
+
+                                I/P                            O/P
+
+ My name is Raj and -----     [My, name, Raj ,and]                 is   
+ name is Raj and I   -----     [name, is, and, I]                 Raj
+ is Raj and I am    -----     [is, Raj, I, am]                    and
+    Raj and I am the  -----     [Raj, and, am, the]                 I
+    and I am the best  -----     [and, I, the, best]                 am
+
+
+    using the OHE we have to convert into vec --- so for 
+    My -- [1, 0, 0, 0, 0, 0, 0, 0]
+    name -- [0, 1, 0, 0, 0, 0, 0, 0]
+    ..............
+
+
+
+    CBOW -- fully connected neural network, where the input layer is the context words, and the output layer is the target word. The hidden layer is used to learn the word embeddings. The weights of the hidden layer are the word embeddings
+
+
+    
+
+
+
+
+
