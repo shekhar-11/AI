@@ -1,0 +1,29 @@
+Average word to vec is for lets say 
+we have a sentence
+
+
+S1 =  "Food is good"
+
+
+so as per the google pretrained model 
+we will get the vector for each word as --
+
+
+
+Food = [x,0.2,0.3,0.4,0.5......]
+is = [y,0.3,0.4,0.5,0.6......]
+good = [z,0.4,0.5,0.6,0.7......]
+
+so in order to get the vector for the sentence S1, we will take the average of the vectors of the words in the sentence, which is given by:
+S1_vector = (Food + is + good) / 3
+
+ie for first index -- it will take as (x+y+z)/3
+for second index -- it will take as (0.2+0.3+0.4)/3
+for third index -- it will take as (0.3+0.4+0.5)/3
+and so on for all the dimensions of the vector.
+
+
+such that we get the vector of 300 dimension for the sentence s1
+
+
+So this is how we can get the vector for a sentence using the average word to vec approach.
