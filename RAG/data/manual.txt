@@ -1,0 +1,29 @@
+document = Document(
+    page_content="""
+Artificial Intelligence (AI) has become one of the most
+ transformative technologies of the 21st century, influencing
+  industries such as healthcare, finance, education, transportation, 
+  and entertainment. Machine learning, a subset of AI, enables systems 
+  to learn patterns from data and make predictions or decisions without
+   being explicitly programmed for every scenario. Large Language Models (LLMs)
+    have further expanded the capabilities of AI by allowing computers to 
+    understand and generate human-like text, assist with coding, summarize
+     documents, answer questions, and even perform complex reasoning tasks.
+      As organizations continue to adopt AI, challenges such as data privacy,
+       model bias, explainability, and ethical considerations become increasingly
+        important. Responsible AI development focuses on transparency, fairness, and
+         accountability while ensuring that these powerful technologies are used to 
+         augment human capabilities rather than replace them. With advancements in 
+         cloud computing, open-source frameworks, and high-performance hardware, 
+AI is becoming more accessible to developers, researchers, and businesses
+          of all sizes, driving innovation and creating new opportunities across the globe.
+""",
+    metadata={
+        "source": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+        "title": "Introduction to Artificial Intelligence",
+        "author": "Open Knowledge Contributors",
+        "category": "Technology",
+        "language": "English",
+        "published": "2026-07-30"
+    }
+)
